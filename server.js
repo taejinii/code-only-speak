@@ -8,7 +8,7 @@ const app = express();
 
 const configuration = new Configuration({
   organization: "org-eyG5tfsktdibhPnjUoitjURd",
-  apiKey: "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",
+  apiKey: process.env.REACT_APP_OPENAI_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
